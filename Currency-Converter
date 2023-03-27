@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+float currency;
+float amount;
+float inr;
+float us,uinr =82.28;
+float yen,yinr =0.63;
+float rubel,rinr =1.08;
+cout<<"choose your currency"<<endl;
+cout<<"1. Dollar"<<endl;
+cout<<"2. Yen"<<endl;
+cout<<"3. Ruble"<<endl;
+cin>>currency;
+cout<<"Enter your amount"<<endl;
+cin>>amount;
+if(currency==1){
+       cout<<"Your amount is"<<amount*uinr;
+}
+else if(currency==2){
+       cout<<"Your amount is"<<amount*yinr;
+}
+else if(currency==3){
+       cout<<"Your amount is"<<amount*rinr;
+}
+else{
+ cout<<"Wrong";
+}
+    return 0;
+}
